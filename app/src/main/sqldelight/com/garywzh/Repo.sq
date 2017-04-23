@@ -1,0 +1,18 @@
+
+CREATE TABLE repos (
+  id INTEGER NOT NULL PRIMARY KEY,
+  name TEXT NOT NULL
+);
+
+-- Further SQL statements are proceeded by an identifier.
+select_all:
+SELECT *
+FROM repos;
+
+insert_row:
+INSERT INTO repos(id, name)
+VALUES (?, ?);
+
+delete_all:
+DELETE
+FROM repos;
